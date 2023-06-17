@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup || LocalStorage</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .dispp{
+        display: none;
+    }
+
+    .modal{
+        position: fixed;
+        top:0;
+        left: 0;
+        background: #8e8d8d99;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s;
+    }
+
+    .bg-active{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .close{
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        right: 32px;
+        color: #000;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h2>Sign up</h2>
+    <form id="my-form">
+        <input type="text" required placeholder="Full name" id="full-name">
+        <input type="text" required placeholder="Your username" id="username">
+        <input type="email" required placeholder="Your email" id="email">
+        <input type="password" required placeholder="Your password" id="password">
+        <button type="submit" class="btn"> Submit</button>
+    </form>
+
+    <button class="btn-btn">Modal</button>
+
+    <p id="myTime"></p>
+
+    <!-- <p class="infom">Know about me</p>
+    <a class="shwm" onclick="disp()">More info</a>
+    <p class="dispp">My name is tony</p> -->
+
+    <!-- <p id="greetin"></p> -->
+
+    <!-- <script>
+        let infom = document.querySelector('.infom')
+        let shwm = document.querySelector('.shwm')
+        let dispp = document.querySelector('.dispp')
+        function disp(){
+            // dispp = true;
+            dispp.style.display = "block"
+            infom.style.display = "none"
+            // alert('Hello')
+        }
+    </script> -->
+
+    <div class="modal">
+        <div class="modal_box">
+            <h2>Hello</h2>
+            <p class="close">X</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style=" text-align: center;">
+        <h3 style="color: #2abb2a; text-transform: uppercase; letter-spacing: 3px; font-size: 14px;">Submitted successfully</h3>
+        <p style="color: #414141;">Your request was submitted successfully and a response<br>will be sent to your e-mail</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <p id="pFname">Full name:</p> -->
+    <script src="./app.js"></script>
+</body>
+</html>
